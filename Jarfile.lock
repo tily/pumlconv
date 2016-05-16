@@ -1,0 +1,3 @@
+---
+:runtime:
+- net.sourceforge.plantuml:plantuml:jar:8040
