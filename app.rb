@@ -53,6 +53,7 @@ post "/" do
 end
 
 get %r{^/(?<id>.+)\.(?<ext>txt|png)$} do
+  content_type params[:ext] == 'png' ? 'image/png' : 'text/plain'
   object = s3.get_object(key: "#{params[:id]}.#{params[:ext]}", bucket: ENV["BUCKET_NAME"])
   object.body.read
 end
