@@ -1,5 +1,5 @@
 require "java"
-require "plantuml"
+require "vendor/jars/net/sourceforge/plantuml/plantuml/8040/plantuml-8040.jar"
 require "aws-sdk-core"
 require "sinatra"
 require "dotenv"
